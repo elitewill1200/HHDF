@@ -1,4 +1,4 @@
-update=6/1/2018 12:18:39 PM
+update=6/11/2018 11:07:46 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=70
 [eeschema]
 version=1
 LibDir=../../CAD Librarys
@@ -72,3 +62,13 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=HHDF Components
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../Plots/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=70
