@@ -1,0 +1,352 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:HHDF Components
+LIBS:B1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4150 4800 0    70   Input ~ 0
+RF_Right
+Text HLabel 4150 5050 0    70   Input ~ 0
+RF_Left
+Text HLabel 5850 5300 2    70   Output ~ 0
+RF_Switched
+$Comp
+L PE4259 U2
+U 1 1 5B117CB2
+P 5000 5050
+F 0 "U2" H 5000 4900 70  0000 C CNN
+F 1 "PE4259" H 5000 5200 70  0000 C CNN
+F 2 "HHDF Library:PE4259" H 5100 5050 70  0001 C CNN
+F 3 "" H 5100 5050 70  0001 C CNN
+	1    5000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4800 4350 4800
+Wire Wire Line
+	4150 5050 4350 5050
+Wire Wire Line
+	5650 5300 5850 5300
+$Comp
+L GND #PWR03
+U 1 1 5B117E4A
+P 4300 5350
+F 0 "#PWR03" H 4300 5100 50  0001 C CNN
+F 1 "GND" H 4300 5200 50  0000 C CNN
+F 2 "" H 4300 5350 50  0001 C CNN
+F 3 "" H 4300 5350 50  0001 C CNN
+	1    4300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5300 4300 5350
+Wire Wire Line
+	4350 5300 4300 5300
+$Comp
+L +3V3 #PWR04
+U 1 1 5B1184FD
+P 5700 4750
+F 0 "#PWR04" H 5700 4600 50  0001 C CNN
+F 1 "+3V3" H 5700 4890 50  0000 C CNN
+F 2 "" H 5700 4750 50  0001 C CNN
+F 3 "" H 5700 4750 50  0001 C CNN
+	1    5700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4750 5700 4800
+Wire Wire Line
+	5700 4800 5650 4800
+$Comp
+L ArduinoProMini U1
+U 1 1 5B1180C3
+P 5000 3050
+F 0 "U1" V 5000 2650 60  0000 C CNN
+F 1 "ArduinoProMini" V 5000 3200 60  0000 C CNN
+F 2 "HHDF Library:ArduinoProMini" H 5000 3300 60  0001 C CNN
+F 3 "" H 5000 3300 60  0001 C CNN
+	1    5000 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4750 1950
+NoConn ~ 4850 1950
+NoConn ~ 4950 1950
+NoConn ~ 5050 1950
+NoConn ~ 5150 1950
+NoConn ~ 5250 1950
+NoConn ~ 4750 4150
+NoConn ~ 4850 4150
+NoConn ~ 5150 4150
+NoConn ~ 5250 4150
+NoConn ~ 4150 3600
+NoConn ~ 4150 3500
+NoConn ~ 4150 3400
+NoConn ~ 4150 3300
+NoConn ~ 4150 3200
+NoConn ~ 4150 3100
+NoConn ~ 4150 3000
+NoConn ~ 4150 2900
+NoConn ~ 4150 2700
+NoConn ~ 4150 2600
+NoConn ~ 4150 2500
+NoConn ~ 5850 2700
+NoConn ~ 5850 2900
+NoConn ~ 5850 3000
+NoConn ~ 5850 3100
+NoConn ~ 5850 3200
+NoConn ~ 5850 3300
+NoConn ~ 5850 3400
+NoConn ~ 5850 3500
+$Comp
+L GND #PWR05
+U 1 1 5B1181D0
+P 4000 2850
+F 0 "#PWR05" H 4000 2600 50  0001 C CNN
+F 1 "GND" H 4000 2700 50  0000 C CNN
+F 2 "" H 4000 2850 50  0001 C CNN
+F 3 "" H 4000 2850 50  0001 C CNN
+	1    4000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5B1181E8
+P 6050 2600
+F 0 "#PWR06" H 6050 2350 50  0001 C CNN
+F 1 "GND" H 6050 2450 50  0000 C CNN
+F 2 "" H 6050 2600 50  0001 C CNN
+F 3 "" H 6050 2600 50  0001 C CNN
+	1    6050 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2850 4000 2800
+Wire Wire Line
+	4000 2800 4150 2800
+Wire Wire Line
+	5850 2600 6050 2600
+$Comp
+L +3V3 #PWR07
+U 1 1 5B11824C
+P 6200 2700
+F 0 "#PWR07" H 6200 2550 50  0001 C CNN
+F 1 "+3V3" H 6200 2840 50  0000 C CNN
+F 2 "" H 6200 2700 50  0001 C CNN
+F 3 "" H 6200 2700 50  0001 C CNN
+	1    6200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2800 6200 2800
+Wire Wire Line
+	6200 2800 6200 2700
+Wire Wire Line
+	7700 5050 7700 3600
+Wire Wire Line
+	7700 3600 5850 3600
+Text Label 7700 4250 0    70   ~ 0
+RF_CLK
+$Comp
+L TEST TP5
+U 1 1 5B118778
+P 6750 2250
+F 0 "TP5" H 6750 2550 50  0000 C BNN
+F 1 "Batt+" H 6750 2500 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_1-5mmDrill" H 6750 2250 50  0001 C CNN
+F 3 "" H 6750 2250 50  0001 C CNN
+	1    6750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP6
+U 1 1 5B1187A5
+P 7050 2250
+F 0 "TP6" H 7050 2550 50  0000 C BNN
+F 1 "Batt-" H 7050 2500 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_1-5mmDrill" H 7050 2250 50  0001 C CNN
+F 3 "" H 7050 2250 50  0001 C CNN
+	1    7050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2500 6750 2500
+Wire Wire Line
+	6750 2500 6750 2250
+$Comp
+L GND #PWR08
+U 1 1 5B1187FF
+P 7050 2300
+F 0 "#PWR08" H 7050 2050 50  0001 C CNN
+F 1 "GND" H 7050 2150 50  0000 C CNN
+F 2 "" H 7050 2300 50  0001 C CNN
+F 3 "" H 7050 2300 50  0001 C CNN
+	1    7050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2250 7050 2300
+$Comp
+L L L1
+U 1 1 5B118983
+P 6700 5050
+F 0 "L1" V 6650 5050 50  0000 C CNN
+F 1 "1.2uH" V 6775 5050 50  0000 C CNN
+F 2 "Inductors_SMD:L_0603_HandSoldering" H 6700 5050 50  0001 C CNN
+F 3 "" H 6700 5050 50  0001 C CNN
+	1    6700 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5B118A00
+P 6900 5250
+F 0 "R1" V 6980 5250 50  0000 C CNN
+F 1 "22k" V 6900 5250 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 6830 5250 50  0001 C CNN
+F 3 "" H 6900 5250 50  0001 C CNN
+	1    6900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5B118A39
+P 7100 5050
+F 0 "R2" V 7180 5050 50  0000 C CNN
+F 1 "470" V 7100 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7030 5050 50  0001 C CNN
+F 3 "" H 7100 5050 50  0001 C CNN
+	1    7100 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5B118A86
+P 7300 5250
+F 0 "C1" H 7325 5350 50  0000 L CNN
+F 1 "1nF" H 7325 5150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7338 5100 50  0001 C CNN
+F 3 "" H 7300 5250 50  0001 C CNN
+	1    7300 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5B118D89
+P 6900 5450
+F 0 "#PWR09" H 6900 5200 50  0001 C CNN
+F 1 "GND" H 6900 5300 50  0000 C CNN
+F 2 "" H 6900 5450 50  0001 C CNN
+F 3 "" H 6900 5450 50  0001 C CNN
+	1    6900 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5B118DAD
+P 7300 5450
+F 0 "#PWR010" H 7300 5200 50  0001 C CNN
+F 1 "GND" H 7300 5300 50  0000 C CNN
+F 2 "" H 7300 5450 50  0001 C CNN
+F 3 "" H 7300 5450 50  0001 C CNN
+	1    7300 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5050 6550 5050
+Wire Wire Line
+	6850 5050 6950 5050
+Wire Wire Line
+	6900 5100 6900 5050
+Connection ~ 6900 5050
+Wire Wire Line
+	6900 5450 6900 5400
+Wire Wire Line
+	7300 5450 7300 5400
+Wire Wire Line
+	7250 5050 7700 5050
+Wire Wire Line
+	7300 5100 7300 5050
+Connection ~ 7300 5050
+$Comp
+L TEST TP3
+U 1 1 5B119641
+P 6200 5800
+F 0 "TP3" H 6200 6100 50  0000 C BNN
+F 1 "RF_OUT" H 6200 6050 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_5mm_Pad" H 6200 5800 50  0001 C CNN
+F 3 "" H 6200 5800 50  0001 C CNN
+	1    6200 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP4
+U 1 1 5B11967E
+P 6500 5800
+F 0 "TP4" H 6500 6100 50  0000 C BNN
+F 1 "RF_GND" H 6500 6050 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_5mm_Pad" H 6500 5800 50  0001 C CNN
+F 3 "" H 6500 5800 50  0001 C CNN
+	1    6500 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5300 5850 5800
+Wire Wire Line
+	5850 5800 6200 5800
+$Comp
+L GND #PWR011
+U 1 1 5B11970D
+P 6500 5850
+F 0 "#PWR011" H 6500 5600 50  0001 C CNN
+F 1 "GND" H 6500 5700 50  0000 C CNN
+F 2 "" H 6500 5850 50  0001 C CNN
+F 3 "" H 6500 5850 50  0001 C CNN
+	1    6500 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5800 6500 5850
+$EndSCHEMATC
